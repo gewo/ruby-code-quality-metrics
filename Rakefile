@@ -17,5 +17,10 @@ task :brakeman, :output_files do |_t, args|
   tracker.errors.any? && abort('Found errors!')
 end
 
-task rails: [:rubocop, :brakeman]
-task default: [:rubocop]
+task :rails_best_practices do
+  sh 'rails_best_practices --spec .'
+end
+
+task ruby: [:rubocop]
+task rails: [:ruby, :brakeman, :rails_best_practices]
+task default: [:ruby]

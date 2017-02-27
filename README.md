@@ -21,7 +21,7 @@ Extra tools for Rails:
 
 In a Rails project:
 
-     docker run -it --rm -v $PWD:/app gewo/ruby-code-quality-metrics rails
+    docker run -it --rm -v $PWD:/app gewo/ruby-code-quality-metrics rails
 
 Continously run checks when files change:
 

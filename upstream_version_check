@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+require 'open3'
+
+packages = {
+  rubocop: 'https://github.com/bbatsov/rubocop/tags',
+  brakeman: 'https://github.com/presidentbeef/brakeman/tags',
+  rails_best_practices: 'https://github.com/railsbp/rails_best_practices/tags'
+}
+
+packages.each do |package, url|
+  line = File.readlines('Gemfile').grep(/#{package}/)[0]
+  version = line.match(/((\d+\.?)+)/).to_s
+
+  cmd = %W(
+    uscan
+    --upstream-version #{version}
+    --package #{package}
+    --no-download
+    --watchfile -
+  ).join ' '
+
+  Open3.popen3(cmd) do |stdin, stdout, _stderr, _thread|
+    stdin.puts(
+      'version=3',
+      'opts=filenamemangle=' \
+         's/.+\\/v?(\\d\S*)\\.tar\\.gz/rubocop-$1\\.tar\\.gz/ \\',
+      "#{url} \\",
+      '.*/v?(\d\S*)\.tar\.gz'
+    )
+    stdin.close
+    ret = stdout.read.chomp
+    puts ret unless ret.empty?
+  end
+end

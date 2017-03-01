@@ -20,7 +20,7 @@ GEM
     parser (2.4.0.0)
       ast (~> 2.2)
     powerpack (0.1.1)
-    rails_best_practices (1.17.0)
+    rails_best_practices (1.18.0)
       activesupport
       code_analyzer (>= 0.4.3)
       erubis
@@ -51,7 +51,7 @@ PLATFORMS
 DEPENDENCIES
   brakeman (= 3.5.0)
   haml
-  rails_best_practices (= 1.17.0)
+  rails_best_practices (= 1.18.0)
   rake
   rubocop (= 0.47.1)
 
@@ -59,4 +59,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.14.3
+   1.14.5

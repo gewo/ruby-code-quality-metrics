@@ -1,4 +1,7 @@
 require 'rubocop/rake_task'
+require 'haml_lint/rake_task'
+
+HamlLint::RakeTask.new
 
 RuboCop::RakeTask.new(:rubocop) do |t|
   t.options = ['--display-cop-names']
@@ -21,6 +24,6 @@ task :rails_best_practices do
   sh 'rails_best_practices --spec .'
 end
 
-task ruby: [:rubocop]
+task ruby: [:rubocop, :haml_lint]
 task rails: [:ruby, :brakeman, :rails_best_practices]
 task default: [:ruby]

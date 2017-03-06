@@ -9,6 +9,8 @@ packages = {
   rails_best_practices: 'https://github.com/railsbp/rails_best_practices/tags'
 }
 
+Dir.chdir __dir__
+
 packages.each do |package, url|
   line = File.readlines('Gemfile').grep(/#{package}/)[0]
   version = line.match(/((\d+\.?)+)/).to_s

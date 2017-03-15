@@ -9,4 +9,4 @@ git_tags.each do |git_tag|
   system "docker build -t docker.io/gewo/ruby-code-quality-metrics:#{tag} ."
 end
 
-system "docker build -t docker.io/gewo/ruby-code-quality-metrics:latest ."
+system 'docker build -t docker.io/gewo/ruby-code-quality-metrics:latest .'

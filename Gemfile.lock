@@ -7,7 +7,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     ast (2.3.0)
-    brakeman (3.5.0)
+    brakeman (3.6.1)
     code_analyzer (0.4.7)
       sexp_processor
     concurrent-ruby (1.0.5)
@@ -56,7 +56,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  brakeman (= 3.5.0)
+  brakeman (= 3.6.1)
   haml
   haml_lint (= 0.23.2)
   rails_best_practices (= 1.18.0)

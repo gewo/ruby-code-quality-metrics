@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.4.0'
+ruby '2.4.1'
 gem 'brakeman', '3.6.1'
 gem 'haml'
 gem 'haml_lint', '0.24.0'

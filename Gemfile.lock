@@ -14,7 +14,7 @@ GEM
     erubis (2.7.0)
     haml (4.0.7)
       tilt
-    haml_lint (0.23.2)
+    haml_lint (0.24.0)
       haml (>= 4.0, < 5.1)
       rainbow
       rake (>= 10, < 13)
@@ -58,7 +58,7 @@ PLATFORMS
 DEPENDENCIES
   brakeman (= 3.6.1)
   haml
-  haml_lint (= 0.23.2)
+  haml_lint (= 0.24.0)
   rails_best_practices (= 1.18.0)
   rake
   rubocop (= 0.47.1)

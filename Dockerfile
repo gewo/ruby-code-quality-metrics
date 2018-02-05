@@ -1,5 +1,4 @@
-FROM ruby:2.4.1-onbuild
-LABEL maintainer "Gebhard Woestemeyer <g@ctr.lc>"
+FROM ruby:2.5.0
 ENV LANG=C.UTF-8
 WORKDIR /app
 ENTRYPOINT ["rake", "-f", "/usr/src/app/Rakefile"]

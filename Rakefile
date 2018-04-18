@@ -24,6 +24,6 @@ task :rails_best_practices do
   sh 'rails_best_practices --spec .'
 end
 
-task ruby: %i(rubocop haml_lint)
-task rails: %i(ruby brakeman rails_best_practices)
+task ruby: %i[rubocop haml_lint]
+task rails: %i[ruby brakeman rails_best_practices]
 task default: [:ruby]

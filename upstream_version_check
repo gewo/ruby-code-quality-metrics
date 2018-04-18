@@ -15,13 +15,13 @@ packages.each do |package, url|
   line = File.readlines('Gemfile').grep(/#{package}/)[0]
   version = line.match(/((\d+\.?)+)/).to_s
 
-  cmd = %W(
+  cmd = %W[
     uscan
     --upstream-version #{version}
     --package #{package}
     --no-download
     --watchfile -
-  ).join ' '
+  ].join ' '
 
   Open3.popen3(cmd) do |stdin, stdout, _stderr, _thread|
     stdin.puts(

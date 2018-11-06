@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.0)
+    activesupport (5.2.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -10,7 +10,7 @@ GEM
     brakeman (3.7.2)
     code_analyzer (0.4.8)
       sexp_processor
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.2)
     erubis (2.7.0)
     haml (5.0.4)
       temple (>= 0.8.0)
@@ -21,7 +21,7 @@ GEM
       rake (>= 10, < 13)
       rubocop (>= 0.50.0)
       sysexits (~> 1.1)
-    i18n (1.0.1)
+    i18n (1.1.1)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.4.0)
     json (2.1.0)
@@ -30,13 +30,13 @@ GEM
     parser (2.5.1.0)
       ast (~> 2.4.0)
     powerpack (0.1.1)
-    rails_best_practices (1.19.0)
+    rails_best_practices (1.19.4)
       activesupport
       code_analyzer (>= 0.4.8)
       erubis
       i18n
       json
-      require_all
+      require_all (~> 2.0)
       ruby-progressbar
     rainbow (3.0.0)
     rake (12.3.1)
@@ -66,7 +66,7 @@ DEPENDENCIES
   brakeman (= 3.7.2)
   haml
   haml_lint (= 0.27.0)
-  rails_best_practices (= 1.19.0)
+  rails_best_practices (= 1.19.4)
   rake
   rubocop (= 0.57.0)
 

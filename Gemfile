@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.5.3'
-gem 'brakeman', '3.7.2'
+ruby '2.6.0'
+gem 'brakeman', '4.3.1'
 gem 'haml'
-gem 'haml_lint', '0.27.0'
+gem 'haml_lint', '0.28.0'
 gem 'rails_best_practices', '1.19.4'
 gem 'rake'
-gem 'rubocop', '0.57.0'
+gem 'rubocop', '0.63.0'

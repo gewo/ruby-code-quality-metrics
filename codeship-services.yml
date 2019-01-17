@@ -1,0 +1,4 @@
+ruby-code-quality-metrics:
+  build:
+    image: gapfish/ruby-code-quality-metrics
+    dockerfile_path: Dockerfile

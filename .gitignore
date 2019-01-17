@@ -1,2 +1,4 @@
 *.swp
 *~
+/codeship.aes
+/dockercfg.codeship

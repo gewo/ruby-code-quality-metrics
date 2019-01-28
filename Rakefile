@@ -9,6 +9,7 @@ end
 
 desc 'Run Brakeman and exit with non-zero exit status'
 task :brakeman, :output_files do |_t, args|
+  ENV["CI"] = "true"
   require 'brakeman'
   files = args[:output_files].split(' ') if args[:output_files]
   tracker = Brakeman.run(

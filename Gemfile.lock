@@ -1,16 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.2)
+    activesupport (5.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     ast (2.4.0)
-    brakeman (4.3.1)
+    brakeman (4.5.0)
     code_analyzer (0.4.8)
       sexp_processor
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     erubis (2.7.0)
     haml (5.0.4)
       temple (>= 0.8.0)
@@ -21,15 +21,15 @@ GEM
       rake (>= 10, < 13)
       rubocop (>= 0.50.0)
       sysexits (~> 1.1)
-    i18n (1.5.2)
+    i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.2)
-    json (2.1.0)
+    json (2.2.0)
     minitest (5.11.3)
-    parallel (1.13.0)
-    parser (2.6.0.0)
+    parallel (1.17.0)
+    parser (2.6.2.0)
       ast (~> 2.4.0)
-    powerpack (0.1.2)
+    psych (3.1.0)
     rails_best_practices (1.19.4)
       activesupport
       code_analyzer (>= 0.4.8)
@@ -41,37 +41,37 @@ GEM
     rainbow (3.0.0)
     rake (12.3.2)
     require_all (2.0.0)
-    rubocop (0.63.0)
+    rubocop (0.66.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.5, != 2.5.1.1)
-      powerpack (~> 0.1)
+      psych (>= 3.1.0)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (~> 1.4.0)
+      unicode-display_width (>= 1.4.0, < 1.6)
     ruby-progressbar (1.10.0)
-    sexp_processor (4.11.0)
+    sexp_processor (4.12.0)
     sysexits (1.2.0)
-    temple (0.8.0)
+    temple (0.8.1)
     thread_safe (0.3.6)
     tilt (2.0.9)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    unicode-display_width (1.4.1)
+    unicode-display_width (1.5.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  brakeman (= 4.3.1)
+  brakeman (= 4.5.0)
   haml
   haml_lint (= 0.28.0)
   rails_best_practices (= 1.19.4)
   rake
-  rubocop (= 0.63.0)
+  rubocop (= 0.66.0)
 
 RUBY VERSION
-   ruby 2.6.0
+   ruby 2.6.2p47
 
 BUNDLED WITH
    1.17.2

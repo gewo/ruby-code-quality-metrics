@@ -41,7 +41,7 @@ Show available rake tasks:
 ## Update gems
 
 After changing the Gemfile, run `docker run -it --rm -v $PWD:/mnt --workdir
-/mnt ruby:2.6.0 bundle update` to update your Gemfile.lock
+/mnt ruby:2.6.3 bundle update` to update your Gemfile.lock
 
 ## Deploy
 

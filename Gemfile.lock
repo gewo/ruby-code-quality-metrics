@@ -12,7 +12,8 @@ GEM
       sexp_processor
     concurrent-ruby (1.0.5)
     erubis (2.7.0)
-    haml (4.0.7)
+    haml (5.0.0)
+      temple (>= 0.8.0)
       tilt
     haml_lint (0.24.0)
       haml (>= 4.0, < 5.1)
@@ -46,8 +47,9 @@ GEM
     ruby-progressbar (1.8.1)
     sexp_processor (4.8.0)
     sysexits (1.2.0)
+    temple (0.8.2)
     thread_safe (0.3.6)
-    tilt (2.0.6)
+    tilt (2.0.10)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     unicode-display_width (1.1.3)
